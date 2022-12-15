@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Emplifi Task</title>
+        <link rel="stylesheet" href="css/main.scss" />
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="upper">
+                <img class="logo" src="assets/images/Logo.svg" alt="Logo" />
+                <hr class="divider" />
+                <section class="icon_group">
+                    <img src="assets/images/Dashboard.svg" alt="Dashboard" />
+                    <img src="assets/images/Analytics.svg" alt="Analytics" />
+                    <img src="assets/images/Content.svg" alt="Content" />
+                    <img
+                        src="assets/images/Influencers.svg"
+                        alt="Influencers"
+                    />
+                    <img src="assets/images/Publisher.svg" alt="Publisher" />
+                    <img src="assets/images/Voc.svg" alt="Voc" />
+                    <img src="assets/images/Community.svg" alt="Community" />
+                    <img src="assets/images/Agent.svg" alt="Agent" />
+                    <img src="assets/images/Commerce.svg" alt="Commerce" />
+                    <img src="assets/images/Bot.svg" alt="Bot" />
+                    <img src="assets/images/Social.svg" alt="Social" />
+                    <img src="assets/images/Commerce-1.svg" alt="Commerce" />
+                </section>
+            </div>
+            <div class="lower">
+                <img src="assets/images/AddButton.svg" alt="Add button" />
+                <hr class="divider" />
+                <div class="lower__group">
+                    <img src="assets/images/Setting.svg" alt="Setting" />
+                    <img src="assets/images/UserIcon.svg" alt="User" />
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar">
+            <div class="community">
+                <h1 class="sidebar-header">community</h1>
+                <img
+                    id="sidebar-toggle"
+                    onclick="onSidebarToggle()"
+                    src="assets/images/CommunityIcon.svg"
+                    alt="Community Icon"
+                />
+            </div>
+            <section class="category">
+                <div class="category__title">
+                    <h2 class="title">Feeds</h2>
+                    <img src="assets/images/ArrowUp.svg" alt="Arrow Icon" />
+                </div>
+                <section class="category__group">
+                    <div class="category__group-item selected">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Inbox.svg alt="Inbox" />
+                            </div>
+                            <p>All incoming</p>
+                        </div>
+                        <span>20</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Assigned.svg
+                                alt="Assigned" />
+                            </div>
+                            <p>Assigned to you</p>
+                        </div>
+                        <span>3</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Note.svg alt="Note" />
+                            </div>
+                            <p>Mentioned you</p>
+                        </div>
+                        <span>2</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Checkmark.svg alt="Check"
+                                />
+                            </div>
+                            <p>For approval</p>
+                        </div>
+                        <span>3</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Outgoing.svg
+                                alt="Outgoing" />
+                            </div>
+                            <p>Sent</p>
+                        </div>
+                        <span>33</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <svg
+                                    width="2"
+                                    height="8"
+                                    viewBox="0 0 2 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 7C2 7.55229 1.55228 8 1 8C0.447715 8 0 7.55229 0 7C0 6.44771 0.447715 6 1 6C1.55228 6 2 6.44771 2 7Z"
+                                        fill="#2F3744"
+                                    />
+                                    <path
+                                        d="M0.5 0V5H1.5V0H0.5Z"
+                                        fill="#2F3744"
+                                    />
+                                </svg>
+                            </div>
+                            <p>Publishing problems</p>
+                        </div>
+                        <span class="red">1</span>
+                    </div>
+                </section>
+            </section>
+            <hr />
+            <section class="category">
+                <div class="category__title">
+                    <h2 class="title">Global feeds</h2>
+                    <img src="assets/images/ArrowUp.svg" alt="Arrow Icon" />
+                </div>
+                <section class="category__group">
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Umbrella.svg
+                                alt="Umbrella" />
+                            </div>
+                            <p>Holiday</p>
+                        </div>
+                        <span>19</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Ticket.svg alt="Ticket"
+                                />
+                            </div>
+                            <p>Priority</p>
+                        </div>
+                        <span>8</span>
+                    </div>
+                </section>
+            </section>
+            <hr />
+            <section class="category">
+                <div class="category__title">
+                    <h2 class="title">My feeds</h2>
+                    <img src="assets/images/ArrowUp.svg" alt="Arrow Icon" />
+                </div>
+                <section class="category__group">
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Airplane.svg
+                                alt="Airplane" />
+                            </div>
+                            <p>Travelling</p>
+                        </div>
+                        <span>21</span>
+                    </div>
+
+                    <div class="category__group-item">
+                        <div class="category__group-item__left">
+                            <div class="icon">
+                                <img src=assets/images/Cart.svg alt="Cart" />
+                            </div>
+                            <p>Ecommerce</p>
+                        </div>
+                        <span>21</span>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="main">
+            <div class="header">
+                <section class="info">
+                    <span>cloud name</span>
+                    <span>module name</span>
+                    <h1>Header here 2 lines max lorem ipsum dolor sit</h1>
+                    <p>
+                        Maximum 3 lines of text consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit
+                        amet color samet gradient nice.
+                    </p>
+                    <div class="controls">
+                        <button onclick="onButtonClick()" class="btn">
+                            Button
+                        </button>
+                        <div class="btn-clicked">
+                            <img
+                                src="assets/images/Checkmark.svg"
+                                alt="checkmark"
+                            />
+                            Your request has been sent
+                        </div>
+                        <a href="#">Learn more</a>
+                    </div>
+                </section>
+                <div class="visual-area"></div>
+            </div>
+            <section class="content">
+                <div class="col">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                        <div class="outer-circle"></div>
+                    </div>
+                    <h3>One Line lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        lorem ipsum dolor sit amet lorem.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                        <div class="outer-circle"></div>
+                    </div>
+                    <h3>One Line lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        lorem ipsum dolor sit amet lorem.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                        <div class="outer-circle"></div>
+                    </div>
+                    <h3>One Line lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        lorem ipsum dolor sit amet lorem.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+    <script type="module" src="js/main.js"></script>
+</html>
